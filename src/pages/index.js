@@ -30,9 +30,21 @@ export default function Home() {
   if (isLoading) return <div>Loading...</div>;
   if (isError) return <div>Error</div>;
 
-  const stations = network.stations.filter(station =>
-    station.name.toLowerCase().includes(filter.toLowerCase())
-  );
+  const stations = network.stations
+    .filter(station => station.name.toLowerCase().includes(filter.toLowerCase()))
+    .map(station => {
+      if (location.latitude && location.longitude) {
+        const distance = getDistance(
+          location.latitude,
+          location.longitude,
+          station.latitude,
+          station.longitude
+        );
+        return { ...station, distance };
+      }
+      return station;
+    })
+    .sort((a, b) => a.distance - b.distance);
 
   function handleFilterChange(e) {
     setFilter(e.target.value);
@@ -47,25 +59,14 @@ export default function Home() {
         onChange={handleFilterChange}
         className={styles.input}
       />
-      {stations.map(station => {
-        let distance = null;
-        if (location.latitude && location.longitude) {
-          distance = getDistance(
-            location.latitude,
-            location.longitude,
-            station.latitude,
-            station.longitude
-          ).toFixed(2);
-        }
-        return (
-          <Link href={`/stations/${station.id}`} key={station.id} className={styles.link}>
-            <span className={styles["station-name"]}>{station.name}</span>
-            <div className={styles["station-bikes"]}>
-             {distance && `${distance} km`}
-            </div>
-          </Link>
-        );
-      })}
+      {stations.map(station => (
+        <Link href={`/stations/${station.id}`} key={station.id} className={styles.link}>
+          <span className={styles["station-name"]}>{station.name}</span>
+          <div className={styles["station-bikes"]}>
+            {station.distance !== undefined ? `${station.distance.toFixed(2)} km` : ''}
+          </div>
+        </Link>
+      ))}
     </div>
   );
 }

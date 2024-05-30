@@ -7,7 +7,7 @@ return (
 <Link href="/">Home</Link>
 <Link href="/passes">Passes</Link>
 <Link href="/challenges">Challenges</Link>
-<Link href="/Hamburger"></Link>
+<Link href="/hamburger">Hamburger</Link>
 </nav>
 <main>{children}</main>
 

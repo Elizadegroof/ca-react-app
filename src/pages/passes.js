@@ -8,31 +8,31 @@ export default function Home() {
       <h1>Passes:</h1>
       <div className={styles.card}>
         <div className={styles.cardHeader}>
-          <h2>Title 1</h2>
-          <span className={styles.price}>$19.99</span>
+          <h2>Duo Daytrip pass</h2>
+          <span className={styles.price}>€7</span>
         </div>
-        <p>Text content for the first div.</p>
+        <p>two bikes, endless exploration, one unforgettable day!</p>
       </div>
       <div className={styles.card}>
         <div className={styles.cardHeader}>
-          <h2>Title 2</h2>
-          <span className={styles.price}>$19.99</span>
+          <h2>Daytrip pass</h2>
+          <span className={styles.price}>€5</span>
         </div>
-        <p>Text content for the second div.</p>
+        <p>Discover a day of excitement and exploration with our Daytrip Pass</p>
       </div>
       <div className={styles.card}>
         <div className={styles.cardHeader}>
-          <h2>Title 3</h2>
-          <span className={styles.price}>$19.99</span>
+          <h2>Week pass</h2>
+          <span className={styles.price}>€12</span>
         </div>
-        <p>Text content for the third div.</p>
+        <p>Unlock a week of unlimited adventure with our Week Pass!</p>
       </div>
       <div className={styles.card}>
         <div className={styles.cardHeader}>
-          <h2>Title 4</h2>
-          <span className={styles.price}>$19.99</span>
+          <h2>Annual pass</h2>
+          <span className={styles.price}>€58</span>
         </div>
-        <p>Text content for the fourth div.</p>
+        <p>Enjoy endless adventures all year long with our Annual Pass!</p>
       </div>
     </div>
   );
