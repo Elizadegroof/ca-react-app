@@ -245,3 +245,30 @@
   padding: 10px 20px; /* Padding around each link */
   color: #e21f1f; /* Light grey text color */
 }
+
+/* Stationid*/
+
+/* Home.module.css */
+
+/* Home.module.css */
+
+.box {
+  background-color: #eeeeee;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  width: 320px;
+  margin: 0 auto; /* Center the box horizontally */
+}
+
+
+.box p {
+  margin: 10px; /* Remove default margin for paragraphs inside the card */
+}
+
+/* Home.module.css */
+
+.heading {
+  margin-left: 20px; /* Add left margin */
+  margin-top: 40px; /* Add top margin */
+}
