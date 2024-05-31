@@ -17,7 +17,7 @@ export default function NewPage() {
               <li>1 You</li>
               <li>2 Sandra</li>
               <li>3 Emma</li>
-              <li>4 Tommie</li>
+              <li>4 Boris</li>
             </ol>
           </div>
         </div>
@@ -30,9 +30,9 @@ export default function NewPage() {
         <p className={styles.leftText}>Ride at least 4 km</p>
         <p className={styles.rightText}>3/4</p>
       </div>
-      <div className={styles.fullWidthCard}>
+      <div className={styles.fullWidthCardCompleted}>
         <p className={styles.leftText}>Ride a velo between 12am - 4am</p>
-        <p className={styles.rightText}>0/1</p>
+        <p className={styles.rightText}>1/1</p>
       </div>
     </div>
   );

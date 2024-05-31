@@ -8,7 +8,7 @@ export default function Home() {
       <h1>Passes:</h1>
       <div className={styles.card}>
         <div className={styles.cardHeader}>
-          <h2>Duo Daytrip pass</h2>
+          <h2>Duo Daytrip pass</h2> 
           <span className={styles.price}>€7</span>
         </div>
         <p>two bikes, endless exploration, one unforgettable day!</p>

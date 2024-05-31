@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <h1>Hamburger:</h1>
+      <h1>Menu:</h1>
       <div className={styles.textLineBlock}>
         <p>How does it work</p>
         <hr className={styles.line} />
