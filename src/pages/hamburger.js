@@ -13,19 +13,19 @@ export default function Home() {
     <div className={styles.container}>
       <h1>Hamburger:</h1>
       <div className={styles.textLineBlock}>
-        <p>Hamburger 1</p>
+        <p>How does it work</p>
         <hr className={styles.line} />
       </div>
       <div className={styles.textLineBlock}>
-      <p>Hamburger 1</p>
+      <p>Settings</p>
         <hr className={styles.line} />
       </div>
       <div className={styles.textLineBlock}>
-      <p>Hamburger 1</p>
+      <p>legal information</p>
         <hr className={styles.line} />
       </div>
       <div className={styles.textLineBlock}>
-      <p>Hamburger 1</p>
+      <p>Share</p>
         <hr className={styles.line} />
       </div>
     </div>

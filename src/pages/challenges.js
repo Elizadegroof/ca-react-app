@@ -18,22 +18,21 @@ export default function NewPage() {
               <li>2 Sandra</li>
               <li>3 Emma</li>
               <li>4 Tommie</li>
-              
             </ol>
           </div>
         </div>
       </div>
       <div className={styles.fullWidthCard}>
-        <div className={styles.cardHeader}></div>
-        <p>Use velo 6 times in 1 day</p>
+        <p className={styles.leftText}>Use velo 6 times in 1 day</p>
+        <p className={styles.rightText}>4/6</p>
       </div>
       <div className={styles.fullWidthCard}>
-        <div className={styles.cardHeader}></div>
-        <p>Text content for the fourth card.</p>
+        <p className={styles.leftText}>Ride at least 4 km</p>
+        <p className={styles.rightText}>3/4</p>
       </div>
       <div className={styles.fullWidthCard}>
-        <div className={styles.cardHeader}></div>
-        <p>Text content for the fifth card.</p>
+        <p className={styles.leftText}>Ride a velo between 12am - 4am</p>
+        <p className={styles.rightText}>0/1</p>
       </div>
     </div>
   );
