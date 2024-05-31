@@ -263,7 +263,7 @@
 
 
 .box p {
-  margin: 10px; /* Remove default margin for paragraphs inside the card */
+  margin: 16px 16px 0px 0px; /* Remove default margin for paragraphs inside the card */
 }
 
 /* Home.module.css */
@@ -272,3 +272,4 @@
   margin-left: 20px; /* Add left margin */
   margin-top: 40px; /* Add top margin */
 }
+

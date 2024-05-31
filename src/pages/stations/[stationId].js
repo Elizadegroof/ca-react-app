@@ -1,6 +1,7 @@
 import useNetwork from "@/data/network";
 import { useRouter } from "next/router";
 import styles from "@/styles/Home.module.css";
+import StationImage from '@/components/StationImage';
 
 export default function Home() {
   const { network, isLoading, isError } = useNetwork();
@@ -15,6 +16,7 @@ export default function Home() {
     <div>
      <h3 className={styles.heading}>{station.name} </h3>
 <div className={styles.box}>
+        <StationImage station={station}/>
         <p>Available bikes: {station.free_bikes}</p>
         <p>Empty spaces: {station.empty_slots} </p>
       </div>
