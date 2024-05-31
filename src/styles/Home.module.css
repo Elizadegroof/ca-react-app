@@ -227,7 +227,7 @@
   justify-content: center; /* Center items horizontally */
   align-items: center; /* Center items vertically */
   box-shadow: 0 -2px 5px rgba(129, 17, 17, 0.1); /* Optional shadow */
-  border-radius: 18px; /* Rounded corners */
+  border-radius: 40px; /* Rounded corners */
   padding: 10px 20px; /* Padding inside the rectangle */
 }
 

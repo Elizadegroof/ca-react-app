@@ -21,7 +21,7 @@ export default function Home() {
         <hr className={styles.line} />
       </div>
       <div className={styles.textLineBlock}>
-      <p>legal information</p>
+      <p>Legal information</p>
         <hr className={styles.line} />
       </div>
       <div className={styles.textLineBlock}>
