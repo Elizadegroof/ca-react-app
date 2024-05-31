@@ -213,3 +213,35 @@
   margin: 10px 0; /* Adjust spacing around the line as needed */
 }
 
+/*navigation*/
+
+.bottomNav {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  max-width: 600px; /* Optional max-width */
+  background-color: #cccccc; /* Light grey background color */
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  box-shadow: 0 -2px 5px rgba(129, 17, 17, 0.1); /* Optional shadow */
+  border-radius: 18px; /* Rounded corners */
+  padding: 10px 20px; /* Padding inside the rectangle */
+}
+
+.navLinks {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #cccccc; /* Light grey background for the links */
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #333; /* Text color */
+  font-weight: bold;
+  padding: 10px 20px; /* Padding around each link */
+  color: #e21f1f; /* Light grey text color */
+}
